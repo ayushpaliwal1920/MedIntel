@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedIntel AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">🩺</div>
+            <h2>MedIntel AI</h2>
+        </div>
+
+        <button class="new-chat" onclick="newChat()">
+            + New Consultation
+        </button>
+
+        <div class="history">
+            <h4>Medical Assistant</h4>
+
+            <div class="history-item">Disease Information</div>
+            <div class="history-item">Symptom Analysis</div>
+            <div class="history-item">Treatment Guidance</div>
+        </div>
+
+        <div class="sidebar-footer">
+            <p>⚠️ For informational purposes only. Always consult a licensed healthcare professional.</p>
+        </div>
+
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-section">
+
+        <div class="top-bar">
+            <div>
+                <h3>MedIntel AI</h3>
+                <p>Medical information only • Not a substitute for professional medical advice</p>
+            </div>
+
+            <div class="status">
+                <span class="dot"></span>
+                Online
+            </div>
+        </div>
+
+        <div class="chat-area" id="chat-area">
+
+            <div class="welcome">
+                <h1>🩺 MedIntel AI</h1>
+
+                <p>
+                    Ask questions about diseases, symptoms, treatments,
+                    medications, and medical conditions.
+                </p>
+
+                <div class="suggestions">
+                    <button onclick="askSuggestion('What is diabetes?')">What is diabetes?</button>
+                    <button onclick="askSuggestion('Symptoms of hypertension')">Symptoms of hypertension</button>
+                    <button onclick="askSuggestion('What causes anemia?')">What causes anemia?</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="input-area">
+            <label for="user-input" class="sr-only">Type your medical question</label>
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Ask a medical question..."
+                autocomplete="off"
+            >
+
+            <button id="send-btn">Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
