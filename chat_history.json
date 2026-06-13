@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "ayush",
+        "messages": [
+            {
+                "role": "user",
+                "content": "ayush"
+            },
+            {
+                "role": "assistant",
+                "content": "Ayush is a cse student who is learning GenAI, RAG, and is making a project (chat bot)."
+            },
+            {
+                "role": "user",
+                "content": "What is acne"
+            },
+            {
+                "role": "assistant",
+                "content": "Acne is a common skin disease characterized by pimples on the face, chest, and back. It occurs when the pores of the skin become clogged with oil, dead skin cells, and bacteria. It is also described as a skin condition where raised bumps, pimples, and cysts form on the face, neck, shoulders, and upper back (Nancy J. Nordenson; Nancy Ross-Flanigan). This happens when pores or hair follicles become blocked, allowing a waxy material called sebum to collect inside them (Nancy Ross-Flanigan)."
+            },
+            {
+                "role": "user",
+                "content": "What is alziomer"
+            },
+            {
+                "role": "assistant",
+                "content": "I don't have enough information in the provided documents to answer that question."
+            },
+            {
+                "role": "user",
+                "content": "what is alzimer"
+            },
+            {
+                "role": "assistant",
+                "content": "I don't have enough information in the provided documents to answer that question."
+            },
+            {
+                "role": "user",
+                "content": "what is acne"
+            },
+            {
+                "role": "assistant",
+                "content": "Acne is a common skin disease characterized by pimples on the face, chest, and back. It occurs when the pores of the skin become clogged with oil, dead skin cells, and bacteria (Nancy J. Nordenson).\n\nMore specifically, acne is a skin condition where raised bumps, pimples, and cysts form on the face, neck, shoulders, and upper back. This happens when pores or hair follicles become blocked, allowing a waxy material called sebum to collect inside them. Normally, sebum flows out onto the skin and hair to form a protective coating, but when it cannot exit, small swellings develop on the skin surface. Bacteria and dead skin cells can also collect in these blocked pores (Nancy Ross-Flanigan). The medical term for common acne is acne vulgaris (Nancy J. Nordenson)."
+            },
+            {
+                "role": "user",
+                "content": "what is cardic arrest"
+            },
+            {
+                "role": "assistant",
+                "content": "I don't have enough information in the provided documents to answer that question."
+            },
+            {
+                "role": "user",
+                "content": "what to do in fever"
+            },
+            {
+                "role": "assistant",
+                "content": "To relieve fever, you can consider the following:\n\n*   **Aspirin:** Aspirin can lower fever by acting on the part of the brain that regulates temperature, signaling blood vessels to widen and allow heat to leave the body more quickly. The recommended adult dosage to reduce fever is one to two tablets every three to four hours, up to six times per day.\n*   **Acetaminophen (Tylenol):** Acetaminophen may relieve fever, particularly if it is over 101\u00b0F (38.3\u00b0C)."
+            },
+            {
+                "role": "user",
+                "content": "more"
+            },
+            {
+                "role": "assistant",
+                "content": "I don't have enough information in the provided documents to answer that question."
+            }
+        ]
+    }
+]

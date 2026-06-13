@@ -130,3 +130,68 @@ function askSuggestion(question){
 function newChat(){
     location.reload();
 }
+
+async function loadHistory(){
+
+    const res = await fetch("/history");
+    const chats = await res.json();
+
+    const historyDiv =
+        document.querySelector(".history");
+
+    historyDiv.innerHTML =
+        "<h4>Recent Chats</h4>";
+
+    chats.forEach(chat=>{
+
+        historyDiv.innerHTML += `
+        <div class="history-item"
+             onclick="loadChat(${chat.id})">
+             ${chat.title}
+        </div>
+        `;
+    });
+}
+
+async function loadConversation(chatId) {
+
+    const response =
+        await fetch(`/conversation/${chatId}`);
+
+    const chat = await response.json();
+
+    const chatArea =
+        document.querySelector(".chat-area");
+
+    chatArea.innerHTML = "";
+
+    chat.messages.forEach(msg => {
+
+        if (msg.role === "user") {
+
+            chatArea.innerHTML += `
+            <div class="message user">
+                <div class="text">
+                    ${msg.content}
+                </div>
+            </div>`;
+        }
+
+        else {
+
+            chatArea.innerHTML += `
+            <div class="message bot">
+                <div class="avatar">AI</div>
+                <div class="text">
+                    ${msg.content}
+                </div>
+            </div>`;
+        }
+    });
+
+    chatArea.scrollTop = chatArea.scrollHeight;
+}
+
+window.onload = () => {
+    loadHistory();
+};

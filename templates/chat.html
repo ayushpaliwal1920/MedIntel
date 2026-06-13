@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
 
 <div class="container">
@@ -24,12 +26,8 @@
             + New Consultation
         </button>
 
-        <div class="history">
-            <h4>Medical Assistant</h4>
-
-            <div class="history-item">Disease Information</div>
-            <div class="history-item">Symptom Analysis</div>
-            <div class="history-item">Treatment Guidance</div>
+        <div class="history" id="history">
+            <h4>Recent Chats</h4>
         </div>
 
         <div class="sidebar-footer">
